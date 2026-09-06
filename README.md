@@ -275,8 +275,7 @@ transformer-math-reasoning/
 ├── examples/
 │   └── input.txt
 │
-└── notebooks/
-    └── training_and_evaluation.ipynb
+└── transformer_math_reasoning.ipynb
 ```
 
 ### File roles
