@@ -1,0 +1,2 @@
+# Core dependency
+torch>=2.0
