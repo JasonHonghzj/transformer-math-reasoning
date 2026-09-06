@@ -270,7 +270,7 @@ transformer-math-reasoning/
 ├── README.md
 ├── requirements.txt
 ├── predict.py
-├── math_transformer.pt
+├── math.pt
 │
 ├── examples/
 │   └── input.txt
@@ -283,7 +283,7 @@ transformer-math-reasoning/
 
 - `notebooks/training_and_evaluation.ipynb` — synthetic data generation, model definition, training, evaluation, and experimentation.
 - `predict.py` — standalone command-line inference script.
-- `math_transformer.pt` — trained model state dictionary.
+- `math.pt` — trained model state dictionary.
 - `examples/input.txt` — sample prompts for testing inference.
 - `requirements.txt` — minimal Python dependency list.
 
@@ -318,25 +318,6 @@ Example output:
 
 The included inference script runs on CPU by default, so a GPU is not required to test the pretrained model.
 
-## Important Checkpoint Rename
-
-The portfolio version of this repository uses:
-
-```text
-math_transformer.pt
-```
-
-instead of the original coursework filename:
-
-```text
-math.pt
-```
-
-Therefore, `predict.py` should load the renamed checkpoint with:
-
-```python
-state_dict = torch.load("math_transformer.pt", map_location=device)
-```
 
 ## Benchmarking
 
